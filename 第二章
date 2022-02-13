@@ -10,3 +10,114 @@ int main()
 }
 
 第二题
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+int main()
+{
+	cout << "Enter long distance: ";
+	double m;
+	cin >> m;
+	cout << m << " long = " << 220*m <<" ma";
+	return 0;
+}
+
+第三题
+#include <iostream>
+void t(void);
+void s(void);
+using std::cout;
+using std::endl;
+int main()
+{
+	t();
+	t();
+	s();
+	s();
+	return 0;
+}
+
+void t()
+{
+	cout << "Three blind nice" << endl;
+}
+
+void s()
+{
+	cout << "See how they run" << endl;
+}
+
+第四题
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+int main()
+{
+	cout << "Enter your age: ";
+	double age;
+	cin >> age;
+	cout << age << " age = " << 12*age <<" month";
+	return 0;
+}
+
+第五题
+#include <iostream>
+using std::cout;
+using std::cin;
+double chansfer(double);
+int main()
+{
+	double cel;
+	cout << "Please enter a Celsius value: ";
+	cin >> cel;
+	cout << cel <<" degress Celsius is " << chansfer(cel)
+	     << " degress Fahrenheit.";
+	return 0;
+}
+double chansfer(double c)
+{
+	return 1.8*c+32.0;
+}
+
+第六题
+#include <iostream>
+using std::cout;
+using std::cin;
+double chansfer(double);
+int main()
+{
+	double light;
+	cout << "Enter the number of light years: ";
+	cin >> light;
+	cout << light <<" light years = " << chansfer(light)
+	     << " astronomical units.";
+	return 0;
+}
+double chansfer(double c)
+{
+	return 63240*c;
+}
+
+第七题
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+void time(int,int);
+int main()
+{
+	int hour;
+	int min;
+	cout <<  "Enter the number of hours: ";
+	cin >> hour;
+	cout << "Enter the number of minutes: ";
+	cin >> min;
+	time(hour,min);
+	return 0;
+}
+void time(int n,int m)
+{
+	cout << "Time: " << n << ":" << m;
+}
